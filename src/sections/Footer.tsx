@@ -1,0 +1,3 @@
+import { ChevronUp } from 'lucide-react'
+import { nav } from '../components/Header'
+export function Footer() { return <footer className="site-footer"><div className="section-shell footer-grid"><div className="footer-brand"><strong>ALEN</strong><span>Energía y Sustentabilidad</span><p>Consultoría especializada + control e inteligencia para proyectos.</p></div><nav>{nav.slice(1).map(([label,id])=><a href={`#${id}`} key={id}>{label}</a>)}</nav><div><strong>Contacto</strong><span>Correo · Teléfono · Dirección por confirmar</span></div><a className="back-top" href="#inicio">Volver arriba <ChevronUp/></a></div><div className="section-shell footer-bottom">© 2026 ALEN · Contenido en validación</div></footer> }

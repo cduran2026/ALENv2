@@ -1,0 +1,5 @@
+import { ArrowRight } from 'lucide-react'
+import { SectionIntro } from '../components/SectionIntro'
+
+const audiences = ['Gerentes de Desarrollo', 'Project Managers', 'Equipos Ambientales y de Permisos', 'Dirección / Gerencias']
+export function Challenge() { return <section className="section challenge"><div className="section-shell"><SectionIntro number="02" kicker="El desafío" title="Muchos proyectos. Muchas etapas. Una sola vista." text="Cuando la información vive en planillas, correos, documentos y reuniones, anticipar un riesgo se vuelve complejo." /><div className="challenge-flow"><div className="complexity-items">{['Proyectos', 'Permisos', 'Hitos', 'Plazos', 'Responsables', 'Riesgos'].map(x => <span key={x}>{x}</span>)}</div><ArrowRight /><div className="outcome-panel"><small>ALEN estructura y prioriza</small><strong>Información gestionable</strong><p>Qué requiere atención y cuál es la próxima acción.</p></div></div><div className="audience-chips">{audiences.map(x => <span key={x}>{x}</span>)}</div></div></section> }
